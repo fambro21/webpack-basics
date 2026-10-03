@@ -6,7 +6,10 @@ const __dirname = path.dirname(__filename);
 
 export default {
   mode: "development",
-  entry: "./src/index.html",
+  entry: {
+    index: "./src/index.js",
+    another: "./src/another-module.js",
+  },
   experiments: {
     html: true,
   },
