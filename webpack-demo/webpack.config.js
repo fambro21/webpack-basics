@@ -27,5 +27,14 @@ export default {
   },
   optimization: {
     runtimeChunk: "single",
+    splitChunks: {
+      cacheGroups: {
+        vender: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
+    },
   },
 };
