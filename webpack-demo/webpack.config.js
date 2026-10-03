@@ -19,6 +19,7 @@ export default {
     htmlFilename: "[name].html",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    publicPath: "/",
   },
   optimization: {
     runtimeChunk: "single",
