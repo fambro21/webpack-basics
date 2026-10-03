@@ -11,10 +11,16 @@ export default {
     html: true,
   },
   devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+  },
   output: {
     filename: "[name].bundle.js",
     htmlFilename: "[name].html",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+  },
+  optimization: {
+    runtimeChunk: "single",
   },
 };
