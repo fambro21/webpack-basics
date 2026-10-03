@@ -7,15 +7,7 @@ const __dirname = path.dirname(__filename);
 export default {
   mode: "development",
   entry: {
-    index: {
-      import: "./src/index.js",
-      dependOn: "shared",
-    },
-    another: {
-      import: "./src/another-module.js",
-      dependOn: "shared",
-    },
-    shared: "lodash",
+    index: "./src/index.js",
   },
   experiments: {
     html: true,
@@ -28,12 +20,5 @@ export default {
     filename: "[name].bundle.js",
     htmlFilename: "[name].html",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
-    publicPath: "/",
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
   },
 };
