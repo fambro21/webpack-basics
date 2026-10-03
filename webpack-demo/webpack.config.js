@@ -26,6 +26,7 @@ export default {
     clean: true,
   },
   optimization: {
+    moduleIds: "deterministic",
     runtimeChunk: "single",
     splitChunks: {
       cacheGroups: {
