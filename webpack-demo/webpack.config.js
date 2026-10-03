@@ -32,6 +32,8 @@ export default {
     publicPath: "/",
   },
   optimization: {
-    runtimeChunk: "single",
+    splitChunks: {
+      chunks: "all",
+    },
   },
 };
