@@ -17,8 +17,12 @@ export default {
     static: "./dist",
   },
   output: {
-    filename: "[name].bundle.js",
-    htmlFilename: "[name].html",
+    html: {
+      title: "Caching",
+    },
+    filename: "[name].[contenthash].js",
+    htmlFilename: "index.html",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
 };
