@@ -1,1 +1,1 @@
-.hello{color:red;background:url(31d6cfe0d16ae931b73c.png)}
+@font-face{font-family:MyFont;src:url(31d6cfe0d16ae931b73c.woff2)format("woff2"),url(31d6cfe0d16ae931b73c.woff)format("woff");font-weight:600;font-size:normal}.hello{color:red;font-family:MyFont;background:url(31d6cfe0d16ae931b73c.png)}
