@@ -7,8 +7,15 @@ const __dirname = path.dirname(__filename);
 export default {
   mode: "development",
   entry: {
-    index: "./src/index.js",
-    another: "./src/another-module.js",
+    index: {
+      import: "./src/index.js",
+      dependOn: "shared",
+    },
+    another: {
+      import: "./src/another-module.js",
+      dependOn: "shared",
+    },
+    shared: "lodash",
   },
   experiments: {
     html: true,
